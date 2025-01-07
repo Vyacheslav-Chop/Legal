@@ -1,0 +1,104 @@
+.hero-section {
+  padding: 60px 0;
+  min-height: 600px;
+  background-image: url('/img/bg-img/bg-image-mobile.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.hello-text {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #988358;
+  text-align: center;
+}
+
+.main-title {
+  font-family: 'Unna', sans-serif;
+  font-size: 32px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.12em;
+  color: #c2bfb8;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    padding: 90px 0;
+    background-image: url('/img/bg-img/bg-image-tablet.jpg');
+  }
+
+  .inner {
+    max-width: 400px;
+    gap: 30px;
+  }
+
+  .hello-text {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .main-title {
+    font-size: 38px;
+  }
+
+  .desc {
+    font-size: 16px;
+    line-height: 1.17;
+  }
+
+  .gallery {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-section {
+    padding: 120px 0;
+    background-image: url('/img/bg-img/bg-image-desctop.jpg');
+  }
+  .inner {
+    max-width: 550px;
+    gap: 0;
+  }
+
+  .hello-text {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+  .main-title {
+    font-size: 58px;
+    margin-bottom: 32px;
+  }
+
+  .desc {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+  }
+
+  .gallery {
+    display: none;
+  }
+}

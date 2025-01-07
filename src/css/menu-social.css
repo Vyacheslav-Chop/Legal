@@ -1,0 +1,45 @@
+.menu-social {
+  border-radius: 30px 0 30px 30px;
+  width: 130px;
+  height: auto;
+  box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  background-color: #fefefe;
+  z-index: 10;
+  transform: translateY(-10px);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-social.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.btn-menu-social-close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: transparent;
+}
+
+.social-list {
+  
+}
+
+.social-item {
+  padding: 16px;
+}
+
+.social-item-link {
+}
+
+.social-item-icon {
+}
