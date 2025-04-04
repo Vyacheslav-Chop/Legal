@@ -1,5 +1,12 @@
 .section-header {
-  background: linear-gradient(to right, #1c243c, #2e5749 30%, #4c7f65 50%, #7dBa89 70%, #d3d3d3);
+  background: linear-gradient(
+    to right,
+    #1c243c,
+    #2e5749 40%,
+    #4c7f65 50%,
+    #7dba89 70%,
+    #d3d3d3
+  );
   position: sticky;
   top: 0;
   z-index: 999;
@@ -18,6 +25,10 @@
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
+}
+
+.nav-logo-icon {
+  fill: #8e6421;
 }
 
 .nav-logo {
@@ -40,20 +51,24 @@
 }
 
 .menu-btn-icon {
-  fill: #4C7F65;
+  fill: #4c7f65;
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-btn:hover .menu-btn-icon,
 .menu-btn:focus .menu-btn-icon {
-  fill: #365F4A;
+  fill: #365f4a;
 }
 
 @media only screen and (min-width: 768px) {
+  .section-header {
+    padding: 0;
+  }
+
   .nav-list {
     display: flex;
-    gap: 24px;
-    margin-right: 24px;
+    gap: 16px;
+    margin-right: 18px;
   }
 
   .nav-link {
@@ -65,7 +80,7 @@
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #f5f5f5;
     transition: font-weight 300ms cubic-bezier(0.4, 0, 0.2, 1),
       color 300ms cubic-bezier(0.4, 0, 0.2, 1),
       transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -74,7 +89,7 @@
   .nav-link:hover,
   .nav-link:focus {
     font-weight: 600;
-    color: #355C47;
+    color: #8e6421;
     transform: scale(1.1);
   }
 
@@ -84,27 +99,36 @@
 
   .btn-menu-social {
     font-family: 'Roboto Slab', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #f5f5f5;
     border-radius: 4px;
     padding: 10px 20px;
-    background-color: #4C7F65;
+    background-color: #4c7f65;
     transition: background-color 300ms ease, box-shadow 300ms ease;
   }
 
   .btn-menu-social:hover,
   .btn-menu-social:focus {
-    background-color: #365F4A;
+    background-color: #365f4a;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
 }
 
 @media only screen and (min-width: 1280px) {
+  .btn-menu-social {
+    font-size: 16px;
+    letter-spacing: 0.06em;
+  }
+
+  .nav-list {
+    gap: 24px;
+    margin-right: 24px;
+  }
 
   .nav-link {
     padding: 25px 0;
-}
+  }
 }
