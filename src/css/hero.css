@@ -1,4 +1,5 @@
 .hero-section {
+  position: relative;
   padding: 60px 0;
   min-height: 600px;
   background-image: url('/img/bg-img/bg-phone-mobile.avif');
@@ -18,10 +19,10 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 32px;
 }
 
-.hello-text {  
+.hello-text {
   font-weight: 500;
   font-size: 12px;
   line-height: 1;
@@ -36,6 +37,8 @@
   font-size: 32px;
   line-height: 1.16;
   text-align: center;
+  color: rgb(191, 230, 221);
+  text-shadow: #da8700;
 }
 
 .desc {
@@ -46,29 +49,45 @@
   color: #f4d35e;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .hero-btn {
   font-family: 'Roboto Slab', sans-serif;
   font-size: 12px;
+
   line-height: 1;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   border-radius: 4px;
-  padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  background-color: #988358;
-  color: #f5f5f5;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(218, 153, 110, 0.3);
+  border-radius: 8px;
+  background-color: #ffc042;
+  color: #133e25;
   transition: box-shadow 300ms ease, transform 300ms ease,
-    background-color 300ms ease;
+    background-color 300ms ease, font-weight 400ms ease;
+  border: #f4d35e;
+  margin-bottom: 60px;
 }
 
 .hero-btn:hover {
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-  background-color: #bba581;
+  box-shadow: 0 6px 8px rgba(6, 175, 15, 0.4);
+
+  background-color: #da8700;
   transform: translateY(-4px);
 }
+.hero-section .social-list {
+  position: absolute;
+  bottom: 0;
+  left: 23%;
 
+  gap: 60px;
+}
+.hero-section .social-icon {
+  width: 20px;
+  height: 20px;
+}
 @media only screen and (min-width: 768px) {
   .hero-section {
     padding: 90px 0;
@@ -96,10 +115,18 @@
 
   .hero-btn {
     font-size: 14px;
+    letter-spacing: 0.05em;
   }
 
   .gallery {
     display: none;
+  }
+  .hero-section .social-list {
+    left: 18%;
+  }
+  .hero-section .social-icon {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -137,9 +164,10 @@
   }
   .hero-btn {
     font-size: 18px;
-    padding: 16px 24px;
   }
-
+  .hero-section .social-list {
+    left: 23%;
+  }
   .gallery {
     display: none;
   }
