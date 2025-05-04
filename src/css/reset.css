@@ -8,6 +8,10 @@ p {
   margin: 0;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -21,12 +25,12 @@ a {
 
 button {
   cursor: pointer;
-  border: none;
+  padding: 0;
 }
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -35,10 +39,11 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  clip-path: none;
   overflow: hidden;
+  opacity: 0;
+  z-index: -1;
 }
