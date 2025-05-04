@@ -8,14 +8,6 @@
 
 .section-header {
   padding: 16px 0;
-  background: linear-gradient(
-    to right,
-    #1c243c,
-    #2e5749 40%,
-    #4c7f65 50%,
-    #7dba89 70%,
-    #d3d3d3
-  );
 }
 
 .container-header {

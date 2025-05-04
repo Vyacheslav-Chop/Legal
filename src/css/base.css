@@ -20,9 +20,10 @@ body {
   min-height: 100vh;
   margin: 0;
   transition: all 0.3s ease;
+  color: #ffffff;
+  background: linear-gradient(to right, #3a5d41, #6a7e90);
 }
 
 main {
   flex-grow: 1;
 }
-

@@ -1,0 +1,10 @@
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-link {
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
