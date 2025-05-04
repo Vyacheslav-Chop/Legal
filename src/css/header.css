@@ -7,7 +7,7 @@
 }
 
 .section-header {
-  padding: 16px 0;
+  padding: 4px 0;
 }
 
 .container-header {
@@ -25,16 +25,17 @@
 }
 
 .menu-btn-icon {
-  fill: #4c7f65;
+  fill: #d4b373;
   transition: all 0.3s ease;
 }
 
 .menu-btn:hover .menu-btn-icon,
 .menu-btn:focus .menu-btn-icon {
-  fill: #365f4a;
+  fill: #4caf50;
   transform: scale(1.09);
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4))
-    drop-shadow(0 6px 10px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 1))
+    drop-shadow(0 4px 8px rgba(0, 0, 0, 1))
+    drop-shadow(0 6px 12px rgba(0, 0, 0, 1));
 }
 
 @media screen and (min-width: 768px) {
