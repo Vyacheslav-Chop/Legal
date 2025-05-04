@@ -4,12 +4,15 @@
 }
 
 .social-link {
-  display: block;
-  padding: 16px 0;
+  display: flex;
+  padding: 16px 0; 
+  align-items: center;
+  justify-content: center; 
 }
 
 .social-icon {
   fill: #d4b373;
+  transition: all 0.3s ease;
 }
 
 .social-link:hover .social-icon,

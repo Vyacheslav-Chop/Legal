@@ -39,12 +39,21 @@
 }
 
 @media screen and (min-width: 768px) {
+  .container-header {
+  justify-content: center;
+}
+  
   .container-header .nav {
     display: flex;
+    margin-right: 40px;
   }
 
   .container-header .social-list {
     display: flex;
+  }
+
+  .nav-logo {
+    flex-grow: 1;
   }
 
   .menu-btn {
