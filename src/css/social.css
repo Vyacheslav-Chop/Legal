@@ -1,0 +1,11 @@
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.social-link {
+  display: block;
+  padding: 20px 0;
+}
