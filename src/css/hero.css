@@ -64,8 +64,8 @@
 }
 
 .hero-btn:hover {
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-  background-color: #bba581;
+  box-shadow: 0 0 0 3px rgba(58, 93, 65, 0.5);
+  background-color: #7e6e48;
   transform: translateY(-4px);
 }
 

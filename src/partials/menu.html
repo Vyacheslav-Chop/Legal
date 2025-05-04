@@ -1,9 +1,17 @@
-<div class="menu" data-menu>
-  <button class="menu-btn-close" type="button" data-menu-close>
-    <svg class="menu-btn-close-icon" width="12" height="12">
-      <use href="../img/icon-close.svg#icon-close"></use>
-    </svg>
-  </button>
-  <load src="/partials/nav.html" />
-  <load src="/partials/social.html" />
+<div class="menu is-close">
+  <div class="menu-inner">
+    <a class="nav-logo" href="./index.html">
+      <svg class="nav-logo-icon" width="40" height="40">
+        <use href="/img/logo-icon.svg#icon-logo-header-converted"></use>
+      </svg>
+    </a>
+    <button class="menu-btn-close" type="button" aria-label="Закрити меню">
+      <svg class="menu-btn-close-icon" width="24" height="24">
+        <use href="/img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+  <load src="./nav.html" />
+  <button class="hero-btn menu-btn" type="button">Замовити консультацію</button>
+  <load src="./social.html" />
 </div>
