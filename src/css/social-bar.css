@@ -1,0 +1,18 @@
+.section-social-bar {
+  padding: 0 0;
+}
+.social-bar-container {
+  background: linear-gradient(to right, #3a5d41, #6a7e90);
+}
+
+.social-bar-container .social-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 100%;
+
+  padding: 10px 15px;
+}
+.social-bar-container .social-icon {
+  display: none;
+}

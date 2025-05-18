@@ -19,7 +19,8 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 40px;
+
 }
 
 .hello-text {
@@ -37,8 +38,8 @@
   font-size: 32px;
   line-height: 1.16;
   text-align: center;
-  color: rgb(191, 230, 221);
-  text-shadow: #da8700;
+  color: rgb(238, 243, 242);
+
 }
 
 .desc {
@@ -53,28 +54,32 @@
 }
 
 .hero-btn {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: var (--font-main);
   font-size: 12px;
-
   line-height: 1;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   border-radius: 4px;
   padding: 15px 20px;
-  box-shadow: 0 4px 6px rgba(218, 153, 110, 0.3);
-  border-radius: 8px;
-  background-color: #ffc042;
-  color: #133e25;
+  border-radius: 5px;
+  color: #ececec;
+  background-color: rgb(152, 131, 88);
   transition: box-shadow 300ms ease, transform 300ms ease,
     background-color 300ms ease, font-weight 400ms ease;
-  border: #f4d35e;
-  margin-bottom: 60px;
+  border: 1px solid #1f1a19;
 }
 
 .hero-btn:hover {
-  box-shadow: 0 6px 8px rgba(6, 175, 15, 0.4);
-  background-color: #da8700;
+  box-shadow: 0 6px 8px rgba(131, 109, 21, 0.4);
+  background-color: #c8890c;
+  color: rgb(232, 231, 179);
   transform: translateY(-4px);
+  border: none;
+}
+
+.hero-section .social-icon {
+  width: 20px;
+  height: 20px;
 }
 .hero-section .social-list {
   position: absolute;
@@ -120,10 +125,9 @@
   .gallery {
     display: none;
   }
-  .hero-section .social-list {
-    left: 18%;
-  }
+
   .hero-section .social-icon {
+    left: 18%;
     width: 24px;
     height: 24px;
   }
@@ -138,11 +142,14 @@
 @media only screen and (min-width: 1280px) {
   .hero-section {
     padding: 120px 0;
+    background-position: center;
+
     background-image: url('/img/bg-img/bg-phon-desktop.avif');
   }
   .inner {
     max-width: 600px;
-    gap: 0;
+    gap: 0px;
+    margin-bottom: px;
   }
 
   .hello-text {
@@ -162,8 +169,13 @@
     margin-bottom: 40px;
   }
   .hero-btn {
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    left: 21%;
+    font-weight: 300;
+    letter-spacing: 0.03em;
   }
+  
   .hero-section .social-list {
     left: 23%;
   }

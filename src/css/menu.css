@@ -95,3 +95,6 @@
 .menu .social-link {
   padding: 16px;
 }
+.menu .social-name {
+  display: none;
+}
